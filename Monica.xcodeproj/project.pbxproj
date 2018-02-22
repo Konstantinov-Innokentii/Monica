@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80B45F55203DDE2800B12F38 /* TopicsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B45F54203DDE2800B12F38 /* TopicsController.swift */; };
+		80D160A2203D7DB900E279F6 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D160A1203D7DB900E279F6 /* MainController.swift */; };
 		80F499A2203AB7C70082A7DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F499A1203AB7C70082A7DD /* AppDelegate.swift */; };
-		80F499A4203AB7C70082A7DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F499A3203AB7C70082A7DD /* ViewController.swift */; };
 		80F499A7203AB7C70082A7DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80F499A5203AB7C70082A7DD /* Main.storyboard */; };
 		80F499AA203AB7C70082A7DD /* Monica.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80F499A8203AB7C70082A7DD /* Monica.xcdatamodeld */; };
 		80F499AC203AB7C70082A7DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80F499AB203AB7C70082A7DD /* Assets.xcassets */; };
@@ -16,9 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		80B45F54203DDE2800B12F38 /* TopicsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsController.swift; sourceTree = "<group>"; };
+		80D160A1203D7DB900E279F6 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		80F4999E203AB7C70082A7DD /* Monica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80F499A1203AB7C70082A7DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		80F499A3203AB7C70082A7DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		80F499A6203AB7C70082A7DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		80F499A9203AB7C70082A7DD /* Monica.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Monica.xcdatamodel; sourceTree = "<group>"; };
 		80F499AB203AB7C70082A7DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,8 +58,8 @@
 		80F499A0203AB7C70082A7DD /* Monica */ = {
 			isa = PBXGroup;
 			children = (
+				80F499B8203AC4780082A7DD /* View Controller */,
 				80F499A1203AB7C70082A7DD /* AppDelegate.swift */,
-				80F499A3203AB7C70082A7DD /* ViewController.swift */,
 				80F499A5203AB7C70082A7DD /* Main.storyboard */,
 				80F499AB203AB7C70082A7DD /* Assets.xcassets */,
 				80F499AD203AB7C70082A7DD /* LaunchScreen.storyboard */,
@@ -65,6 +67,15 @@
 				80F499A8203AB7C70082A7DD /* Monica.xcdatamodeld */,
 			);
 			path = Monica;
+			sourceTree = "<group>";
+		};
+		80F499B8203AC4780082A7DD /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				80D160A1203D7DB900E279F6 /* MainController.swift */,
+				80B45F54203DDE2800B12F38 /* TopicsController.swift */,
+			);
+			path = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,9 +150,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80F499A4203AB7C70082A7DD /* ViewController.swift in Sources */,
+				80D160A2203D7DB900E279F6 /* MainController.swift in Sources */,
 				80F499A2203AB7C70082A7DD /* AppDelegate.swift in Sources */,
 				80F499AA203AB7C70082A7DD /* Monica.xcdatamodeld in Sources */,
+				80B45F55203DDE2800B12F38 /* TopicsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
