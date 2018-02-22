@@ -2,27 +2,12 @@ import UIKit
 
 class TopicsController: UITableViewController {
     
-    var indexPath = IndexPath()
-    
-    let sectionUser = ["Recent",
-                       "Favorite"],
-    sectionTopic = ["Mechanic",
-                    "Molecular physics",
-                    "Electrycity and magnetism",
-                    "Optics",
-                    "Particle physics"]
+    var selectedTopic = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.largeTitleDisplayMode = .never
-        switch indexPath.section {
-        case 0:
-            navigationItem.title = sectionUser[indexPath.row]
-        case 1:
-            navigationItem.title = sectionTopic[indexPath.row]
-        default:
-            return
-        }
+        navigationItem.title = selectedTopic
     }
     
     // MARK: - Table view data source

@@ -4,7 +4,7 @@ class MainController: UITableViewController {
     
     let searchController = UISearchController(searchResultsController: nil)
     
-    var indexPathSegue = IndexPath()
+    var selectedTopic = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,10 +18,10 @@ class MainController: UITableViewController {
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let topicsVC = segue.destination as? TopicsController
-        topicsVC?.indexPath = indexPathSegue
+        topicsVC?.selectedTopic = selectedTopic
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        indexPathSegue = indexPath
+        selectedTopic = (tableView.cellForRow(at: indexPath)?.reuseIdentifier)!
         performSegue(withIdentifier: "segue", sender: nil)
     }
     
