@@ -1,4 +1,5 @@
 import UIKit
+import CoreData
 
 class TopicsController: UITableViewController {
     
@@ -6,6 +7,22 @@ class TopicsController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        
+        let context = appDelegate.persistentContainer.viewContext
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Topic")
+        do {
+            print("CoreData")
+            let result = try context.fetch(request)
+            for data in result as! [NSManagedObject]{
+                
+                print(data.value(forKey: "path") as! String)
+            }
+        }catch{
+            print("Failed")
+        }
+      
+        
         navigationItem.largeTitleDisplayMode = .never
         navigationItem.title = selectedTopic
     }

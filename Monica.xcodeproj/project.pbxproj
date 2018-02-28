@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05F63F352046A3C2004BE6C1 /* Document+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F63F312046A3C2004BE6C1 /* Document+CoreDataClass.swift */; };
+		05F63F362046A3C2004BE6C1 /* Document+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F63F322046A3C2004BE6C1 /* Document+CoreDataProperties.swift */; };
+		05F63F372046A3C2004BE6C1 /* Topic+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F63F332046A3C2004BE6C1 /* Topic+CoreDataClass.swift */; };
+		05F63F382046A3C2004BE6C1 /* Topic+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F63F342046A3C2004BE6C1 /* Topic+CoreDataProperties.swift */; };
+		05F63F3D2046A741004BE6C1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F63F3C2046A741004BE6C1 /* CoreData.framework */; };
 		80B45F55203DDE2800B12F38 /* TopicsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B45F54203DDE2800B12F38 /* TopicsController.swift */; };
 		80D160A2203D7DB900E279F6 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D160A1203D7DB900E279F6 /* MainController.swift */; };
 		80F499A2203AB7C70082A7DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F499A1203AB7C70082A7DD /* AppDelegate.swift */; };
@@ -17,6 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05F63F312046A3C2004BE6C1 /* Document+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Document+CoreDataClass.swift"; sourceTree = "<group>"; };
+		05F63F322046A3C2004BE6C1 /* Document+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Document+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		05F63F332046A3C2004BE6C1 /* Topic+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Topic+CoreDataClass.swift"; sourceTree = "<group>"; };
+		05F63F342046A3C2004BE6C1 /* Topic+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Topic+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		05F63F3C2046A741004BE6C1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		80B45F54203DDE2800B12F38 /* TopicsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsController.swift; sourceTree = "<group>"; };
 		80D160A1203D7DB900E279F6 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		80F4999E203AB7C70082A7DD /* Monica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monica.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,17 +43,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05F63F3D2046A741004BE6C1 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05F63F3B2046A740004BE6C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05F63F3C2046A741004BE6C1 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		80F49995203AB7C70082A7DD = {
 			isa = PBXGroup;
 			children = (
+				05F63F312046A3C2004BE6C1 /* Document+CoreDataClass.swift */,
+				05F63F322046A3C2004BE6C1 /* Document+CoreDataProperties.swift */,
+				05F63F332046A3C2004BE6C1 /* Topic+CoreDataClass.swift */,
+				05F63F342046A3C2004BE6C1 /* Topic+CoreDataProperties.swift */,
 				80F499A0203AB7C70082A7DD /* Monica */,
 				80F4999F203AB7C70082A7DD /* Products */,
+				05F63F3B2046A740004BE6C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,9 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05F63F362046A3C2004BE6C1 /* Document+CoreDataProperties.swift in Sources */,
 				80D160A2203D7DB900E279F6 /* MainController.swift in Sources */,
 				80F499A2203AB7C70082A7DD /* AppDelegate.swift in Sources */,
+				05F63F382046A3C2004BE6C1 /* Topic+CoreDataProperties.swift in Sources */,
+				05F63F372046A3C2004BE6C1 /* Topic+CoreDataClass.swift in Sources */,
 				80F499AA203AB7C70082A7DD /* Monica.xcdatamodeld in Sources */,
+				05F63F352046A3C2004BE6C1 /* Document+CoreDataClass.swift in Sources */,
 				80B45F55203DDE2800B12F38 /* TopicsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,12 +318,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AUZF4B9TJ6;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Monica/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = vicheslav.Monica;
+				PRODUCT_BUNDLE_IDENTIFIER = IM.Monica;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,12 +335,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AUZF4B9TJ6;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Monica/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = vicheslav.Monica;
+				PRODUCT_BUNDLE_IDENTIFIER = IM.Monica;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
